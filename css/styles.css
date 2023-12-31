@@ -1,0 +1,154 @@
+/*-------------------------------------------------
+SammyMasala's Web Template CSS - A CSS template for building simple websites with Bootstrap 5.3.0(last tested version).
+
+- This template is designed to work with the template page "index.html" found in the package. Use the structure here as a baseline to be modified to suit your needs.
+
+*************THANK YOU****************
+---------------------------------------------------*/
+
+/*--------------------
+# 1. Global Variables
+- Where possible, use these variables as the default values throughout the whole site, to keep consistency. 
+- Not all values are expected to be used for every page.  
+--------------------*/ 
+/* Global Fonts */
+:root{
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Montserrat", sans-serif;
+    --nav-font: "Lato", sans-serif;
+}
+
+/* Global Colours */
+:root {
+    --background-color: hsl(0, 80%, 98%);
+    --background-color-rgb: 255, 255, 255;
+    --default-color: #141414;
+    --default-color-rgb: 33, 37, 41;
+    --primary-color: #e84545;
+    --primary-color-rgb: 232, 69, 69;
+    --secondary-color: #765ae4;
+    --secondary-color-rgb: 50, 53, 58;
+    --contrast-color: #99db2d;
+    --contrast-color-rgb: 255, 255, 255;
+  }
+  
+/* Nav Menu Colors */
+:root {
+    --nav-color: #3a3939;
+    --nav-hover-color: #e84545;
+    --nav-dropdown-color: #3a3939;
+    --nav-dropdown-hover-color: #e84545;
+    --nav-dropdown-background-color: #ffffff;
+    --nav-mobile-background-color: #ffffff;
+}
+
+/* Scroll Behaviour */
+:root{
+    scroll-behavior: smooth;
+}
+
+/*----------------------
+# 2. General Configuration
+- Use this section to configure the DEFAULT format of the general/repeated elements of the site, such as body, header, footer. 
+- NOT ADVISED to include page specific values under this section. In a similar vein, applying custom formatting that deviates from the DEFAULT should be considered carefully for impact on user consistency 
+------------------------*/
+/* Body */
+body{
+    background-color: var(--default-color);
+    background-image: var(--bs-gradient);
+    font-family: var(--default-font);
+    font-size: 24px;
+}
+
+/* Header */
+.header{
+    background-color: var(--secondary-color);
+    height: 50px;
+}
+.header img{
+    height:100%;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer{
+    background-color: var(--secondary-color);
+    height: 150px;
+}
+.footer img{
+    height:100%;
+    object-fit: cover;
+}
+
+/*--------------------
+# 3.Page-Specific Content
+- Use this section for all page specific content.
+- Where applicable, consider breaking up sections by page, e.g. by page
+--------------------*/
+
+/********** index.html***********/
+/* Navbar */
+.navbar{
+    background-color: var(--default-color);
+    height:40px;
+} 
+.navbar img{
+    margin:auto;
+    object-fit: cover;
+    height:100%;
+}
+
+/* Hero/Title */
+.hero{
+    background-color: var(--secondary-color);
+    background-image: var(--bs-gradient);
+    height: 400px;
+    animation-name: opacity-fade-in;
+    animation-duration: .6s;
+}
+.hero img{
+    height:100%;
+    padding:5px;
+    animation-name: opacity-fade-in;
+    animation-fill-mode: both;
+    animation-delay:1s;
+    animation-duration: 1s;
+    object-fit: cover;
+}
+
+/* Content 1 */
+.content-1{
+    background-color: var(--background-color);
+    height: 250px;
+}
+.content-1 img{
+    height:100%;
+    padding:5px;
+    object-fit: cover;
+    animation-name: opacity-fade-in;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+    animation-duration: .6s;
+}
+
+.content-2{
+    height:400px;
+}
+.content-2 img{
+    height:100%;
+    padding:5px;
+    object-fit: cover;
+}
+
+@keyframes opacity-fade-in {
+    from{
+        opacity: 0;
+    }to{
+        opacity:100;
+    }    
+}
+
+
+
+
+
